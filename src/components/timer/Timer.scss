@@ -1,0 +1,35 @@
+@import "../../sass/variables";
+.promo-timer {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	animation: showTimer .5s ease-in-out ;
+}
+.promo-timer__dots {
+	animation: flicker 1.5s infinite;
+	font-family: $headersFont;
+	font-weight: 700;
+	font-size: 26px;
+	color: $mainFontColor;
+}
+@keyframes flicker {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes showTimer {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
