@@ -1,11 +1,19 @@
 .promo-girl {
 	&__wrap {
+        position: absolute;
+        right: 216px;
         padding-top: 395px;
 		display: flex;
         align-items:flex-end;
         justify-content: flex-end;
         gap: 34px;
 	}
+    &__pen{
+        right: 177px;
+        bottom: 114px;
+        position: absolute;
+        z-index: -1;
+    }
     &__planes{
         width: 170px;
         height: auto;

@@ -3,6 +3,7 @@
 	width: 881px;
 	z-index: -1;
 	top: 0;
+	right: 0;
 	position: absolute;
 	img {
 		position: absolute;
@@ -11,40 +12,50 @@
 		width: 100%;
 	}
 	&__atom {
+		animation: atom 6s ease-in-out infinite alternate;
 		top: 131px;
 		left: 93px;
 	}
-	&__big-planet {
-		top: 81px;
-		left: 227px;
-	}
+
 	&__alarm {
-		animation: alarm-frst 4s linear infinite;
+		transform: scale(0.7);
+		animation: alarm 12s linear infinite;
 		top: 218px;
 		left: 134px;
 	}
 	&__rocket {
+		transform: translate(0, 70px);
 		animation: rocket 12s linear infinite alternate;
 		top: 352px;
 		left: 106px;
 	}
 	&__ball {
+		animation: ball 6s ease-in-out infinite alternate;
 		top: 295px;
 		left: 372px;
 	}
 	&__dark-planet {
+		animation: dark-planet 6s ease-in-out infinite alternate;
 		top: 460px;
 		left: 334px;
 	}
+	&__big-planet {
+		animation: big-planet 6s ease-in-out infinite alternate;
+		top: 81px;
+		left: 227px;
+	}
 	&__strip-planet {
+		animation: strip-planet 7s ease-in-out infinite alternate;
 		top: 134px;
 		left: 446px;
 	}
 	&__cross {
+		animation: cross 12s ease-in-out infinite;
 		top: 240px;
 		left: 450px;
 	}
 	&__divide {
+		animation: divide 12s ease-in-out infinite;
 		top: 184px;
 		left: 531px;
 	}
@@ -55,62 +66,154 @@
 		left: 482px;
 	}
 	&__elephant {
+		animation: elephant 6s ease-in-out infinite alternate;
 		top: 223px;
 		left: 595px;
-		animation: elephant 6s ease-in-out infinite alternate;
 	}
 	&__paints {
+		animation: paints 11s ease-in-out infinite;
 		top: 116px;
 		left: 739px;
 	}
 	&__plane {
+		transform: scale(0.5) rotate(45deg);
+		animation: plane 6s ease-in-out infinite alternate;
 		top: 329px;
 		left: 736px;
 	}
 }
-@keyframes alarm-frst {
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes paints {
 	0% {
+		transform: rotate(0);
 	}
-	67% {
-		transform: scale(1.4);
+	45% {
+		transform: rotate(0);
 	}
+
 	100% {
 		transform: rotate(360deg);
 	}
 }
-@keyframes alarm-scnd {
+
+@keyframes ball {
 	0% {
+		transform: translate(0, 0);
 	}
-	66% {
+	100% {
+		transform: translate(0, 34px);
 	}
-	67% {
-		transform: scale(1.4);
+}
+@keyframes cross {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	50% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	75% {
+		opacity: 1;
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+}
+@keyframes divide {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 0;
 	}
 	100% {
 		transform: scale(1);
+		opacity: 0;
+	}
+}
+@keyframes dark-planet {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+@keyframes atom {
+	0% {
+		transform: scale(0) rotate(0);
+	}
+	100% {
+		transform: scale(1) rotate(45deg);
+	}
+}
+@keyframes big-planet {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(-50px, 20px);
+	}
+}
+@keyframes strip-planet {
+	0% {
+		transform: translate(0, 0);
+	}
+	11% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(30px, 0);
+	}
+}
+@keyframes plane {
+	0% {
+		transform: scale(0.5) rotate(45deg);
+	}
+	100% {
+		transform: scale(1) rotate(0);
 	}
 }
 
-// 0% {
-//     transform:  scale(1) ;
-// }
-// 67%{
-//     transform: scale(1.4) rotate(360deg)  ;
-// }
-// 100% {
-//     transform:  scale(1)  rotate(360deg);
-// }
-@keyframes rocket {
+@keyframes alarm {
 	0% {
-		transform: translateX(0);
+		transform: scale(0.7) rotate(0deg);
 	}
-	67% {
-		transform: translate(0, 70px);
+	50% {
+		transform: scale(1) rotate(-180deg);
 	}
 	100% {
-		transform: translateX(0);
+		transform: scale(0.7) rotate(-360deg);
 	}
 }
+
+@keyframes rocket {
+	0% {
+		transform: translate(0, 70px);
+	}
+	67% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translate(0, 70px);
+	}
+}
+
 @keyframes lamp {
 	0% {
 		transform: rotate(0);

@@ -5,6 +5,9 @@
 	font-family: $headersFont, sans-serif;
 	font-family: $commonFont, sans-serif;
 }
+body{
+	position: relative;
+}
 p {
 	line-height: 1.7rem;
 	letter-spacing: 0.05em;
