@@ -1,15 +1,22 @@
 @import "./_variables";
 
-.buttons {
-    border: none;
+.button {
+	border: none;
 	border-radius: 15px;
+	letter-spacing: 0.04em;
+	font-size: 20px;
+	&_logo {
+		background: #ffffff;
+		border: 1px solid #1f1d2a;
+		border-radius: 15px;
+		font-weight: 400;
+		color: $mainFontColor;
+	}
 	&_promo {
 		background: $mainColor;
 		box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
 		font-family: $commonFont;
 		font-weight: 700;
-		font-size: 20px;
-		letter-spacing: 0.04em;
 		color: #ffffff;
 	}
 }
