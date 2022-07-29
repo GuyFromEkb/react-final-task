@@ -16,7 +16,7 @@ const PromoAction = () => {
         <>
             <div className="promo-action">
                 <button className="promo-action__btn button button_promo">
-                    Учавствовать
+                    Участвовать
                 </button>
                 {showTimer && <Timer hideTimer={hideTimer} />}
             </div>

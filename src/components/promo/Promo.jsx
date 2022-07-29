@@ -2,38 +2,38 @@
 import Logo from '../logo/Logo'
 import PromoTitle from '../promoTitle/PromoTitle'
 import PromoAction from '../promoAction/PromoAction'
-import PromoBg from '../promoBg/PromoBg'
 
+import PromoGirl from '../promoGirl/PromoGirl'
+import PromoSpace from '../promoSpace/PromoSpace'
+
+import PromoSide from '../promoSide/PromoSide'
 
 import './Promo.scss'
 
 
 const Promo = () => {
     return (
-        <>
 
+        <section className="promo">
             <div className="container">
                 <Logo />
 
-                <div className="wrap">
-
-                    <PromoTitle>
+                <div className="promo__wrap">
+                    <PromoSide>
+                        <PromoTitle />
                         <PromoAction />
-                    </PromoTitle>
-                    <PromoBg />
-
+                    </PromoSide>
+                    
+                    <PromoSide>
+                        <PromoGirl />
+                        <PromoSpace />
+                    </PromoSide>
                 </div>
+
             </div>
+        </section>
 
 
-
-
-
-
-
-
-
-        </>
     )
 }
 

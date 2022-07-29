@@ -4,7 +4,17 @@
 	display: flex;
 	justify-content: space-between;
 	padding-top: 30px;
-	align-items:center;
+	align-items: center;
+	&__svg {
+		path {
+			&:nth-child(-n + 5) {
+				fill: $mainColor;
+			}
+			&:first-child {
+				fill: $mainAccentColor;
+			}
+		}
+	}
 	&__wrap {
 		cursor: pointer;
 

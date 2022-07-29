@@ -1,0 +1,25 @@
+@import "../../sass/variables";
+
+.be-part-item {
+	padding: 20px 35px 24px 35px;
+	width: 445px;
+	height: 170px;
+	background: #ffffff;
+	box-shadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
+	border-radius: 16px;
+	&__img {
+		width: 70px;
+		height: auto;
+		object-fit: cover;
+	}
+	&__descr {
+		margin-top: 8px;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.04em;
+		color: $accentFontColor;
+	}
+	&__link {
+		color: $mainAccentColor;
+	}
+}

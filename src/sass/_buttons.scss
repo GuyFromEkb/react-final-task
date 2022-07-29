@@ -6,15 +6,15 @@
 	letter-spacing: 0.04em;
 	font-size: 20px;
 	&_logo {
-		background: #ffffff;
-		border: 1px solid #1f1d2a;
 		border-radius: 15px;
 		font-weight: 400;
-		color: $mainFontColor;
+		border: none;
+		color: #fff;
+		background-color: $mainAccentColor;
 	}
 	&_promo {
 		background: $mainColor;
-		box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
+		box-shadow: 0px 15px 30px transparentize($color: $mainColor, $amount: 0.75);
 		font-family: $commonFont;
 		font-weight: 700;
 		color: #ffffff;

@@ -7,19 +7,23 @@
 	position: absolute;
 	img {
 		position: absolute;
+		animation-delay: 2s;
 	}
 	&__bg {
 		width: 100%;
 	}
 	&__atom {
-		animation: atom 6s ease-in-out infinite alternate;
+		transform: scale(0);
+		animation: atom 6s ease-in-out  infinite alternate;
 		top: 131px;
 		left: 93px;
 	}
 
 	&__alarm {
 		transform: scale(0.7);
-		animation: alarm 12s linear infinite;
+		animation: alarm 12s linear  infinite;
+		// animation-delay: 1.4s;
+		// animation: name duration timing-function delay iteration-count direction fill-mode;
 		top: 218px;
 		left: 134px;
 	}
@@ -50,11 +54,13 @@
 		left: 446px;
 	}
 	&__cross {
+		opacity: 0;
 		animation: cross 12s ease-in-out infinite;
 		top: 240px;
 		left: 450px;
 	}
 	&__divide {
+		opacity: 0;
 		animation: divide 12s ease-in-out infinite;
 		top: 184px;
 		left: 531px;

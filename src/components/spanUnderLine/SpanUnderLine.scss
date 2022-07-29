@@ -1,0 +1,16 @@
+@import "../../sass/variables";
+
+span.under-line {
+	font-family: inherit;
+	position: relative;
+	overflow: hidden;
+	display: inline-flex;
+	padding-bottom: 4px;
+	svg {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: auto;
+        fill: $mainAccentColor;
+	}
+}

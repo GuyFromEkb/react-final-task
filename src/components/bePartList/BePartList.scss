@@ -1,0 +1,6 @@
+.be-part__list {
+    margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 445px);
+	gap: 30px;
+}

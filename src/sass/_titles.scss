@@ -1,0 +1,13 @@
+@import "./_variables";
+
+.title {
+	font-family: $headersFont;
+	font-weight: 700;
+	color: $mainFontColor;
+	&_section {
+		font-size: 32px;
+		line-height: 44px;
+        letter-spacing: 0.04em;
+
+	}
+}

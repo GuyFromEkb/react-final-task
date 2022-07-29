@@ -5,16 +5,23 @@
 	font-family: $headersFont, sans-serif;
 	font-family: $commonFont, sans-serif;
 }
-body{
+body {
 	position: relative;
 }
 p {
 	line-height: 1.7rem;
 	letter-spacing: 0.05em;
+	color: $mainFontColor;
 }
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
+}
+span.bold {
+	font-weight: 700;
+}
+span.main-color {
+	color: $mainColor;
 }
 
 @import "./titles";
