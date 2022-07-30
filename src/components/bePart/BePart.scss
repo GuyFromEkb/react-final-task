@@ -1,8 +1,9 @@
 .be-part {
-	padding-top: 36px;
+	// padding-top: 36px;
 	padding-bottom: 94px;
 	background: url("../../assets/img/be-part-bg.png") center no-repeat;
-	background-size: contain ;
+	background-size: 100% auto;
+	// background-size: contain ;
 	&__title {
 		text-align: center;
 	}

@@ -1,0 +1,43 @@
+@import "../../sass/variables";
+.plan-animate-wrap {
+	// position: relative;
+	padding-top: 126px;
+	padding-left: 93px;
+	svg {
+		display: block;
+		margin: 0 auto;
+	}
+}
+.plan-text {
+	position: absolute;
+	font-family: $commonFont;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	color: $accentFontColor;
+	width: 268px;
+	top: 600px;
+	left: 1310px;
+	&__link {
+		text-underline-offset: 1px;
+		color: $mainColor;
+	}
+	&_0 {
+		width: 200px;
+		top: 174px;
+		left: 403px;
+	}
+	&_1 {
+		width: 200px;
+		top: 377px;
+		left: 872px;
+	}
+	&_2 {
+		width: 275px;
+		top: 593px;
+		left: 1350px;
+	}
+}
+.plan-plane-path{
+    fill: $mainAccentColor;
+}
