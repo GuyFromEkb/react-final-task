@@ -1,4 +1,5 @@
 @import "../../sass/variables";
+
 .plan-animate-wrap {
 	// position: relative;
 	padding-top: 126px;
@@ -24,20 +25,46 @@
 	}
 	&_0 {
 		width: 200px;
-		top: 174px;
-		left: 403px;
+		top: 171px;
+		left: 396px;
 	}
 	&_1 {
 		width: 200px;
-		top: 377px;
-		left: 872px;
+		top: 375px;
+		left: 863px;
 	}
 	&_2 {
 		width: 275px;
-		top: 593px;
-		left: 1350px;
+		top: 591px;
+		left: 1342px;
 	}
 }
-.plan-plane-path{
-    fill: $mainAccentColor;
+.plan-plane-path {
+	fill: $mainAccentColor;
+}
+.plan-circle {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 60%;
+	background-color: $mainAccentColor;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: $commonFont;
+	font-weight: 700;
+	font-size: 40px;
+	color: #ffffff;
+	&_0 {
+		top: 172px;
+		left: 279px;
+	}
+	&_1 {
+		top: 375px;
+		left: 743px;
+	}
+	&_2 {
+		top: 592px;
+		left: 1224px;
+	}
 }

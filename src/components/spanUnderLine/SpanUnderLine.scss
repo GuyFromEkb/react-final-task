@@ -9,7 +9,7 @@ span.under-line {
 	svg {
 		position: absolute;
 		left: 0;
-		bottom: 0;
+		bottom: -1px;
 		height: auto;
         fill: $mainAccentColor;
 	}

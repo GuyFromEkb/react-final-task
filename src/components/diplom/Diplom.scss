@@ -1,0 +1,27 @@
+@import "../../sass/_variables";
+
+.diplom {
+	margin-top: -35px;
+	background: url("../../assets/img/diplom-bg.png") center no-repeat;
+	background-size: 100% auto;
+	background-position: 0 187px;
+	// height: 600px;
+    //!!!
+    padding-bottom: 150px;
+	&__title {
+		margin-top: 55px;
+	}
+	&__wrap {
+		padding: 0 4px;
+		display: grid;
+		grid-template-columns: 500px 680px;
+		justify-content: space-between;
+	}
+	&__left {
+	}
+	&__descr {
+		font-size: 18px;
+		margin-top: 27px;
+		color: $accentFontColor;
+	}
+}

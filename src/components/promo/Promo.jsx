@@ -1,13 +1,8 @@
-
-import Logo from '../logo/Logo'
 import PromoTitle from '../promoTitle/PromoTitle'
 import PromoAction from '../promoAction/PromoAction'
-
 import PromoGirl from '../promoGirl/PromoGirl'
 import PromoSpace from '../promoSpace/PromoSpace'
-
-import PromoSide from '../promoSide/PromoSide'
-
+import Logo from '../logo/Logo'
 import './Promo.scss'
 
 
@@ -23,7 +18,7 @@ const Promo = () => {
                         <PromoTitle />
                         <PromoAction />
                     </PromoSide>
-                    
+
                     <PromoSide>
                         <PromoGirl />
                         <PromoSpace />
@@ -38,3 +33,11 @@ const Promo = () => {
 }
 
 export default Promo
+
+const PromoSide = ({ children }) => {
+    return (
+        <div className="promo__side">
+            {children}
+        </div>
+    )
+}
