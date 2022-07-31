@@ -58,9 +58,9 @@ const PlanText = () => {
         end: custom => {
             let Mdelay;
 
-            if (custom === 0) { Mdelay = 1.2 }
-            if (custom === 1) { Mdelay = 1.5 }
-            if (custom === 2) { Mdelay = 1.8 }
+            if (custom === 0) { Mdelay = .7 }
+            if (custom === 1) { Mdelay = 1 }
+            if (custom === 2) { Mdelay = 1.3 }
 
             return {
                 x: 0,
@@ -120,13 +120,13 @@ const PlanPlane = () => {
                     onAnimationComplete={() => setRenderPlane(false)}
                     transition={{
                         visibility: {
-                            delay: 0.7,
+                            delay: 0.3,
                         },
                         opacity: {
                             delay: 2.2,
                             duration: 0.3,
                         },
-                        delay: 0.6,
+                        delay: 0.1,
                         duration: 2.1,
                         ease: "easeInOut",
                     }}

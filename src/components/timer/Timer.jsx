@@ -4,7 +4,8 @@ import TimerItem from '../timerItem/TimerItem'
 import './Timer.scss'
 
 const Timer = ({ hideTimer }) => {
-    const DEAD_LINE = '2022-08-26'
+    // const DEAD_LINE = '2022-08-26'
+    const DEAD_LINE = '2022-08-31T13:50'
 
 
     const [day, setDay] = useState(null)
@@ -27,6 +28,8 @@ const Timer = ({ hideTimer }) => {
         const hours = Math.floor((t / (1000 * 60 * 60) % 24))
         const minutes = Math.floor((t / 1000 / 60) % 60)
 
+
+
         return {
             t,
             days,
@@ -37,7 +40,8 @@ const Timer = ({ hideTimer }) => {
     const updateTimer = () => {
         const deadline = getTimeRemaining(DEAD_LINE)
 
-        if (deadline.t <= 0) {
+        if (deadline.t < 0 || isNaN(deadline.t)) {
+
             hideTimer()
             return
         }
@@ -46,12 +50,6 @@ const Timer = ({ hideTimer }) => {
         setHour(deadline.hours)
         setMin(deadline.minutes)
     }
-
-
-
-
-    if (!(day && hour && min))
-        return
 
     return (
         <>
