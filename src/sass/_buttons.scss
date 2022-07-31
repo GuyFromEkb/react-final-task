@@ -12,11 +12,16 @@
 		color: #fff;
 		background-color: $mainAccentColor;
 	}
-	&_promo {
+	&_promo,
+	&_register {
 		background: $mainColor;
 		box-shadow: 0px 15px 30px transparentize($color: $mainColor, $amount: 0.75);
 		font-family: $commonFont;
 		font-weight: 700;
 		color: #ffffff;
+	}
+	&_register{
+		background: #E02D05;
+		box-shadow: 0px 15px 30px transparentize($color: #E02D05, $amount: 0.75);
 	}
 }

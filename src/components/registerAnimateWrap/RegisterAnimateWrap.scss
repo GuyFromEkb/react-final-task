@@ -1,0 +1,23 @@
+.register-animate {
+	&__fst-plane,
+	&__scd-plane,
+	&__action-plane {
+		position: absolute;
+	}
+	&__fst-plane {
+		z-index: 2;
+		bottom: 22px;
+		right: 339px;
+	}
+	&__scd-plane {
+		z-index: 1;
+		bottom: 22px;
+		right: 313px;
+	}
+	&__action-plane {
+		right: 135px;
+		bottom: -2px;
+		z-index: 3;
+		offset-path: path("M1 28.5C120.2 20.1 351.5 -285.5 351.5 -285.5");
+	}
+}

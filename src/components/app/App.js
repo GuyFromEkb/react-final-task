@@ -4,7 +4,7 @@ import PageDescr from '../pageDescr/PageDescr';
 import BePart from '../bePart/BePart';
 import Plan from '../plan/Plan';
 import Diplom from '../diplom/Diplom';
-import Form from '../form/Form';
+import Register from '../register/Register';
 import './App.scss';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
 			<BePart />
 			<Plan />
 			<Diplom />
-			<Form />
+			<Register />
 		</>
 	)
 }

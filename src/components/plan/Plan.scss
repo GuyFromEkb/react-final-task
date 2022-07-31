@@ -8,15 +8,6 @@
     &__title{
         text-align: center;
     }
-
-    &__plane{
-        left: 0;
-        top: 58px;
-        position: absolute;
-        offset-path: path("M1 0.5C68.6 10.9 117.5 29.1667 133.5 37L285 115L363 154L451.5 188L598 254L710.5 318.5L856.5 403.5L1008 470L1146.5 528.5L1266.5 560L1419 596.5H1523L1643.5 579.5L1736 537.5L1810 492L1884 436L1988 335.5");
-        offset-distance: 40%;
-        visibility: hidden;
-    }
 }
 
 

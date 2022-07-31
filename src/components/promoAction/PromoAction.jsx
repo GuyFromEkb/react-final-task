@@ -11,7 +11,6 @@ const PromoAction = () => {
         setShowTimer(false)
     }
 
-    console.log(showTimer);
     return (
         <>
             <div className="promo-action">

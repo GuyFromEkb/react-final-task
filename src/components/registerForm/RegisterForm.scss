@@ -1,0 +1,20 @@
+@import "../../sass/forms";
+
+.register {
+	&__form {
+		margin-top: 49px;
+	}
+	&__form-checkbox {
+		margin-top: 32px;
+		padding-left: 2px;
+		.form__error {
+			bottom: -25px;
+			left: 3px;
+		}
+	}
+	&__button {
+		width: 290px;
+		height: 60px;
+		margin-top: 30px;
+	}
+}
