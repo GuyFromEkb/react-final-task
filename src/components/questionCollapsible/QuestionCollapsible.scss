@@ -1,0 +1,61 @@
+@import "../../sass/variables";
+.question {
+	&__wrap {
+		border-top: 1px solid $mainFontColor;
+		&:last-child {
+			border-bottom: 1px solid $mainFontColor;
+		}
+	}
+	&__content {
+		color: $mainFontColor;
+		padding: 0 48px 33px 0;
+	}
+	&__header {
+		width: 100%;
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		user-select: none;
+		cursor: pointer;
+	}
+	&__header.active {
+		.question__circl {
+			&::after {
+				width: 2px;
+				height: 21px;
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+		}
+	}
+	&__question {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.04em;
+		color: $accentFontColor;
+	}
+	&__circl {
+		position: relative;
+		height: 48px;
+		width: 48px;
+		background: $mainAccentColor;
+		border-radius: 50%;
+		&::before,
+		&::after {
+			transition: all 0.33s;
+			content: "";
+			position: absolute;
+			background: #fff;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 21px;
+			height: 2px;
+		}
+		&::after {
+			width: 2px;
+			height: 21px;
+		}
+	}
+}

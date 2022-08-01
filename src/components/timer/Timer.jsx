@@ -7,11 +7,9 @@ const Timer = ({ hideTimer }) => {
     // const DEAD_LINE = '2022-08-26'
     const DEAD_LINE = '2022-08-31T13:50'
 
-
     const [day, setDay] = useState(null)
     const [hour, setHour] = useState(null)
     const [min, setMin] = useState(null)
-
 
     useEffect(() => {
         updateTimer()
@@ -28,8 +26,6 @@ const Timer = ({ hideTimer }) => {
         const hours = Math.floor((t / (1000 * 60 * 60) % 24))
         const minutes = Math.floor((t / 1000 / 60) % 60)
 
-
-
         return {
             t,
             days,
@@ -41,7 +37,6 @@ const Timer = ({ hideTimer }) => {
         const deadline = getTimeRemaining(DEAD_LINE)
 
         if (deadline.t < 0 || isNaN(deadline.t)) {
-
             hideTimer()
             return
         }
@@ -52,15 +47,13 @@ const Timer = ({ hideTimer }) => {
     }
 
     return (
-        <>
-            <div className="promo-timer">
-                <TimerItem digit={day} itemName={"дней"} />
-                <div className="promo-timer__dots">:</div>
-                <TimerItem digit={hour} itemName={"часов"} textForHours={"по МСК"} />
-                <div className="promo-timer__dots">:</div>
-                <TimerItem digit={min} itemName={"минут"} />
-            </div>
-        </>
+        <div className="promo-timer">
+            <TimerItem digit={day} itemName={"дней"} />
+            <div className="promo-timer__dots">:</div>
+            <TimerItem digit={hour} itemName={"часов"} textForHours={"по МСК"} />
+            <div className="promo-timer__dots">:</div>
+            <TimerItem digit={min} itemName={"минут"} />
+        </div>
     )
 }
 

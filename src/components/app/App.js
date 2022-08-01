@@ -5,7 +5,11 @@ import BePart from '../bePart/BePart';
 import Plan from '../plan/Plan';
 import Diplom from '../diplom/Diplom';
 import Register from '../register/Register';
+import Question from '../question/Question';
+import Mailing from '../mailing/Mailing';
+import Footer from '../footer/Footer';
 import './App.scss';
+
 
 const App = () => {
 	return (
@@ -16,6 +20,9 @@ const App = () => {
 			<Plan />
 			<Diplom />
 			<Register />
+			<Question />
+			<Mailing />
+			<Footer />
 		</>
 	)
 }

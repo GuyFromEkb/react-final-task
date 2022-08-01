@@ -1,0 +1,27 @@
+.mailing {
+	margin-top: 110px;
+	padding-top: 32px;
+	background: url("../../assets/img/mailing-bg.jpg") center/auto 373px no-repeat;
+	min-height: 375px;
+	&__title {
+		text-align: center;
+		color: #ffff;
+	}
+	&__descr {
+		margin: 20px auto 0 auto;
+		color: #ffff;
+		font-size: 18px;
+		text-align: center;
+		color: #ffffff;
+		width: 406px;
+	}
+
+	&__policy {
+		p {
+			color: #d6d7dd;
+		}
+		a {
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.mailing {
+	&__error-mail {
+		height: 20px;
+		color: rgb(250, 112, 112);
+		top: -24px;
+		left: 0;
+	}
+	&__error-policy {
+		// z-index: -1;
+
+		color: rgb(250, 112, 112);
+		bottom: -23px;
+		left: 0px;
+	}
+	&__form {
+		margin-top: 40px;
+		padding-left: 286px;
+		display: grid;
+		grid-template-columns: 540px 360px;
+		grid-template-rows: 60px;
+		column-gap: 30px;
+		row-gap: 22px;
+	}
+	&__button {
+		width: 100%;
+		height: 60px;
+		grid-row-start: 1;
+		grid-column-start: 2;
+	}
+}

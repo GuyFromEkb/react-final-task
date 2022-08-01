@@ -5,6 +5,9 @@
 	border-radius: 15px;
 	letter-spacing: 0.04em;
 	font-size: 20px;
+	&:active {
+		transform: scale(1.005);
+	}
 	&_logo {
 		border-radius: 15px;
 		font-weight: 400;
@@ -13,15 +16,19 @@
 		background-color: $mainAccentColor;
 	}
 	&_promo,
-	&_register {
+	&_register,
+	&_mailing {
 		background: $mainColor;
 		box-shadow: 0px 15px 30px transparentize($color: $mainColor, $amount: 0.75);
 		font-family: $commonFont;
 		font-weight: 700;
 		color: #ffffff;
 	}
-	&_register{
-		background: #E02D05;
-		box-shadow: 0px 15px 30px transparentize($color: #E02D05, $amount: 0.75);
+	&_register {
+		background: #e02d05;
+		box-shadow: 0px 15px 30px transparentize($color: #e02d05, $amount: 0.75);
+	}
+	&_mailing {
+		box-shadow: none;
 	}
 }

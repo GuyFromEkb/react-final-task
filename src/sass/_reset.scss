@@ -8,6 +8,11 @@ ul[class],
 ol[class] {
 	padding: 0;
 }
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
 
 body,
 h1,
@@ -48,7 +53,7 @@ img {
 	max-width: 100%;
 	display: block;
 }
-button{
+button {
 	cursor: pointer;
 }
 input,

@@ -1,5 +1,3 @@
-
-
 import './TimerItem.scss'
 
 const TimerItem = ({ digit, itemName, textForHours }) => {
@@ -26,22 +24,18 @@ const TimerItem = ({ digit, itemName, textForHours }) => {
         case 'минут':
             correctName = numWord(digit, ['минута', 'минуты', 'минут']);
             break;
-
         default:
             correctName = ""
             break;
     }
 
-
-
     return (
-
         <div className="timer-item">
             <div className="timer-item__block">{prefixDigit}{digit}</div>
             <div className="timer-item__desr">{correctName} {textForHours && <span>{textForHours}</span>}
             </div>
         </div>
-
     )
 }
+
 export default TimerItem
