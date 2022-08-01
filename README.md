@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-[Demo](https://react-final-task-mu.vercel.app/).
+[Demo](https://react-final-task-mu.vercel.app/)
 
 ## Available Scripts
 
