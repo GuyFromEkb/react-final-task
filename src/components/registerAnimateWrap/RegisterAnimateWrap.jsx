@@ -1,9 +1,8 @@
-import { motion } from "framer-motion";
-
-import actionPlane from "../../assets/img/plane-register.png";
-import fstPlane from "../../assets/img/plane-fst.png";
-import scdPlane from "../../assets/img/plane-scd.png";
-import "./RegisterAnimateWrap.scss";
+import { motion } from "framer-motion"
+import actionPlane from "../../assets/img/plane-register.png"
+import fstPlane from "../../assets/img/plane-fst.png"
+import scdPlane from "../../assets/img/plane-scd.png"
+import "./RegisterAnimateWrap.scss"
 
 const actionPlaneVariant = {
     start: {
@@ -12,7 +11,7 @@ const actionPlaneVariant = {
     end: {
         offsetDistance: "0%",
         transform: "translateX(-130px) translateY(2px) rotate(6deg)",
-    },
+    }
 }
 const actionPlaneTransition = {
     offsetDistance: {
@@ -25,17 +24,17 @@ const actionPlaneTransition = {
         type: "spring",
         bounce: 0.4,
         duration: 0.8,
-    },
+    }
 }
 const fstPlaneVariant = {
     end: {
         transform: "translateY(6px) translateX(-29px)",
-    },
+    }
 }
 const scdPlaneVariant = {
     end: {
         transform: "translateX(3px) translateY(-9px)",
-    },
+    }
 }
 const planeTransition = {
     type: "spring",
@@ -45,6 +44,7 @@ const planeTransition = {
 }
 
 const RegisterAnimateWrap = () => {
+
     return (
         <motion.div
             className="register-animate"
@@ -76,7 +76,7 @@ const RegisterAnimateWrap = () => {
                 alt="second plane"
             />
         </motion.div>
-    );
-};
+    )
+}
 
-export default RegisterAnimateWrap;
+export default RegisterAnimateWrap

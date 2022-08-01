@@ -4,6 +4,7 @@ import PlanAnimateWrap from "../planAnimateWrap/PlanAnimateWrap";
 import "./Plan.scss";
 
 const Plan = () => {
+
     return (
         <section className="plan">
             <div className="container">
@@ -11,7 +12,7 @@ const Plan = () => {
                 <PlanAnimateWrap />
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Plan;
+export default Plan

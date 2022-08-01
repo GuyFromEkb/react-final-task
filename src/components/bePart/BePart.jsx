@@ -1,7 +1,5 @@
-
 import SpanUnderLine from '../spanUnderLine/SpanUnderLine'
 import BePartList from '../bePartList/BePartList'
-
 import './BePart.scss'
 
 const BePart = () => {
@@ -11,10 +9,7 @@ const BePart = () => {
                 <h2 className='be-part__title title title_section' >Для чего <SpanUnderLine>нужно</SpanUnderLine> участвовать</h2>
                 <BePartList />
             </div>
-
         </section>
-
-
     )
 }
 

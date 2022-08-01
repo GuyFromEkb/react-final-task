@@ -1,4 +1,3 @@
-
 import Promo from '../promo/Promo';
 import PageDescr from '../pageDescr/PageDescr';
 import BePart from '../bePart/BePart';
@@ -10,8 +9,8 @@ import Mailing from '../mailing/Mailing';
 import Footer from '../footer/Footer';
 import './App.scss';
 
-
 const App = () => {
+
 	return (
 		<>
 			<Promo />

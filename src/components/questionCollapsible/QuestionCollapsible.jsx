@@ -1,11 +1,10 @@
-import Collapsible from 'react-collapsible';
-
+import Collapsible from 'react-collapsible'
 import './QuestionCollapsible.scss'
 
 const QuestionCollapsible = ({ num, activeNum, onAddActiveNum, content, title }) => {
 
     const isActive = activeNum === num
-
+    
     return (
         <div className="question__wrap">
             <Collapsible

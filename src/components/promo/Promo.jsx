@@ -5,14 +5,12 @@ import PromoSpace from '../promoSpace/PromoSpace'
 import Logo from '../logo/Logo'
 import './Promo.scss'
 
-
 const Promo = () => {
-    return (
 
+    return (
         <section className="promo">
             <div className="container">
                 <Logo />
-
                 <div className="promo__wrap">
                     <PromoSide>
                         <PromoTitle />
@@ -24,17 +22,15 @@ const Promo = () => {
                         <PromoSpace />
                     </PromoSide>
                 </div>
-
             </div>
         </section>
-
-
     )
 }
 
 export default Promo
 
 const PromoSide = ({ children }) => {
+    
     return (
         <div className="promo__side">
             {children}

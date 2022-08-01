@@ -1,8 +1,8 @@
-import { useForm } from "react-hook-form";
-
-import "./RegisterForm.scss";
+import { useForm } from "react-hook-form"
+import "./RegisterForm.scss"
 
 const RegisterForm = () => {
+
 	const {
 		register,
 		formState: { errors },
@@ -11,12 +11,12 @@ const RegisterForm = () => {
 	} = useForm({
 		mode: "onBlur",
 		reValidateMode: "onBlur",
-	});
+	})
 
 	const onSubmit = (data) => {
-		console.log(JSON.stringify(data));
-		reset();
-	};
+		console.log(JSON.stringify(data))
+		reset()
+	}
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className="form register__form">
@@ -140,7 +140,7 @@ const RegisterForm = () => {
 				Участвовать
 			</button>
 		</form>
-	);
-};
+	)
+}
 
-export default RegisterForm;
+export default RegisterForm

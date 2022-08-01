@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-
 import './MailingForm.scss'
 
 const MailingForm = () => {
@@ -12,12 +11,12 @@ const MailingForm = () => {
     } = useForm({
         mode: "onBlur",
         reValidateMode: "onBlur",
-    });
+    })
 
     const onSubmit = (data) => {
-        console.log(JSON.stringify(data));
-        reset();
-    };
+        console.log(JSON.stringify(data))
+        reset()
+    }
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="form mailing__form ">

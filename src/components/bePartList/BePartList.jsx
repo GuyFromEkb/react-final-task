@@ -1,5 +1,4 @@
 import BePartItem from '../bePartItem/BePartItem'
-
 import star from '../../assets/img/be-part-ico/star.png'
 import win from '../../assets/img/be-part-ico/win.png'
 import certificat from '../../assets/img/be-part-ico/certificat.png'
@@ -18,13 +17,11 @@ const items = [
 ]
 
 const BePartList = () => {
-    return (
-        <>
-            <div className="be-part__list">
-                {items.map((item,index) => <BePartItem key={index} {...item} />)}
-            </div>
 
-        </>
+    return (
+        <div className="be-part__list">
+            {items.map((item, index) => <BePartItem key={index} {...item} />)}
+        </div>
     )
 }
 

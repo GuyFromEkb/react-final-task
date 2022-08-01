@@ -1,8 +1,7 @@
-
-
 import './PageDescr.scss'
 
 const PageDescr = () => {
+
     return (
         <aside className='page-descr' >
             <div className="container">

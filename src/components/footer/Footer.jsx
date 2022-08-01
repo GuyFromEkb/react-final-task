@@ -1,8 +1,6 @@
-
 import tg from '../../assets/img/social-tg-icon.png'
 import dzen from '../../assets/img/social-dzen-icon.png'
 import vk from '../../assets/img/social-vk-icon-footer.png'
-
 import './Footer.scss'
 
 const Footer = () => {
@@ -10,10 +8,10 @@ const Footer = () => {
     function onArrowClick() {
         document.querySelector('.promo').scrollIntoView({
             behavior: "smooth"
-        });
+        })
     }
-    return (
 
+    return (
         <footer className='footer'>
             <div className="container">
                 <div className="footer__wrap">
@@ -42,7 +40,6 @@ const Footer = () => {
 
             </div>
         </footer>
-
     )
 }
 

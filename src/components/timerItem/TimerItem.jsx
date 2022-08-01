@@ -3,12 +3,12 @@ import './TimerItem.scss'
 const TimerItem = ({ digit, itemName, textForHours }) => {
 
     const numWord = (value, words) => {
-        value = Math.abs(value) % 100;
-        const num = value % 10;
-        if (value > 10 && value < 20) return words[2];
-        if (num > 1 && num < 5) return words[1];
-        if (num === 1) return words[0];
-        return words[2];
+        value = Math.abs(value) % 100
+        const num = value % 10
+        if (value > 10 && value < 20) return words[2]
+        if (num > 1 && num < 5) return words[1]
+        if (num === 1) return words[0]
+        return words[2]
     }
 
     const prefixDigit = digit < 10 ? "0" : null
@@ -16,17 +16,17 @@ const TimerItem = ({ digit, itemName, textForHours }) => {
 
     switch (itemName) {
         case 'дней':
-            correctName = numWord(digit, ['день', 'дня', 'дней']);
-            break;
+            correctName = numWord(digit, ['день', 'дня', 'дней'])
+            break
         case 'часов':
-            correctName = numWord(digit, ['час', 'часа', 'часов']);
-            break;
+            correctName = numWord(digit, ['час', 'часа', 'часов'])
+            break
         case 'минут':
-            correctName = numWord(digit, ['минута', 'минуты', 'минут']);
-            break;
+            correctName = numWord(digit, ['минута', 'минуты', 'минут'])
+            break
         default:
             correctName = ""
-            break;
+            break
     }
 
     return (
@@ -37,5 +37,4 @@ const TimerItem = ({ digit, itemName, textForHours }) => {
         </div>
     )
 }
-
 export default TimerItem

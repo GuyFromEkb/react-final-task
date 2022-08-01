@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-
 import spaceBg from "../../assets/img/space/space-bg.png"
 import atom from "../../assets/img/space/space-atom.png"
 import bigPlanet from "../../assets/img/space/space-big-planet.png"
@@ -26,10 +25,11 @@ const showSpaceAnimation = {
             delay: 0.5,
             duration: 1.5
         }
-    },
+    }
 }
 
 const PromoSpace = () => {
+
     return (
         <>
             <motion.div
@@ -53,9 +53,7 @@ const PromoSpace = () => {
                 <img src={elephant} alt="elephant" className="promo-space__elephant" />
                 <img src={paints} alt="paints" className="promo-space__paints" />
                 <img src={plane} alt="plane" className="promo-space__plane" />
-
             </motion.div>
-
         </>
     )
 }

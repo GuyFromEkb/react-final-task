@@ -1,12 +1,10 @@
-
 import SpanUnderLine from '../spanUnderLine/SpanUnderLine'
 import diplom from "../../assets/img/diplom.jpg"
-
 import './Diplom.scss'
 
 const Diplom = () => {
-    return (
 
+    return (
         <section className="diplom">
             <div className="container">
                 <div className="diplom__wrap">
@@ -20,13 +18,9 @@ const Diplom = () => {
 
 export default Diplom
 
-
-
-
-
 const DiplomLeft = () => {
-    return (
 
+    return (
         <div className="diplom__left">
             <h2 className="diplom__title title title_section">Выдаём <SpanUnderLine>дипломы</SpanUnderLine> участникам  </h2>
             <p className='diplom__descr' >
@@ -37,11 +31,11 @@ const DiplomLeft = () => {
                 Со слоном к победам напролом!
             </p>
         </div>
-
     )
 }
 
 const DiplomRight = () => {
+    
     return (
         <div className="diplom__right">
             <img className='diplom__img' src={diplom} alt="diplom" />

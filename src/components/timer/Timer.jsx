@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import TimerItem from '../timerItem/TimerItem'
-
 import './Timer.scss'
 
 const Timer = ({ hideTimer }) => {

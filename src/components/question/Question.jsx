@@ -1,6 +1,5 @@
-import { useState } from "react";
-
-import QuestionCollapsible from "../questionCollapsible/QuestionCollapsible";
+import { useState } from "react"
+import QuestionCollapsible from "../questionCollapsible/QuestionCollapsible"
 import './Question.scss'
 
 const questionData = [
@@ -14,7 +13,8 @@ const questionData = [
 const lorem = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nesciunt repellendus iusto reprehenderit ea odit minima deserunt aut a! Quo inventore labore praesentium quam iure nisi, adipisci ipsam quod rem."
 
 const Question = () => {
-    const [activeQuestion, setActiveQuestion] = useState(null);
+
+    const [activeQuestion, setActiveQuestion] = useState(null)
 
     const handleActiveQuestion = (questNum) => {
         activeQuestion === questNum ? setActiveQuestion(null) : setActiveQuestion(questNum)
@@ -37,7 +37,6 @@ const Question = () => {
                 }
             </div>
         </section>
-
     )
 }
 
