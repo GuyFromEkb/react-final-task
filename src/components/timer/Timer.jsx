@@ -3,8 +3,7 @@ import TimerItem from '../timerItem/TimerItem'
 import './Timer.scss'
 
 const Timer = ({ hideTimer }) => {
-    // const DEAD_LINE = '2022-08-26'
-    const DEAD_LINE = '2022-08-31T13:50'
+    const DEAD_LINE = '2023-09-31T13:50'
 
     const [day, setDay] = useState(null)
     const [hour, setHour] = useState(null)
